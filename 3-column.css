@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --sedans-background:hsl(31, 77%, 52%);
+    --description-text:hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+    --s-button-hover : #fbe7c4;
+    --suv-background: hsl(184, 100%, 22%);
+    --suv-button-hover:hsl(184, 85%, 75%);
+    --luxury-background: hsl(179, 100%, 13%);
+    --luxury-button-hover:hsl(179, 100%, 34%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-headings-buttons);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    line-height: 1.5;
+}
+
+/*sudan section*/
+
+.sedans {
+    background-color: var(--sedans-background);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 30px;
+}
+
+.s-button {
+    background-color: var(--background-headings-buttons);
+    border:none;
+    padding: 10px;
+    border-radius: 40px;
+    width: 50%;
+    color: var(--sedans-background);
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.s-button:hover {
+    background-color: var(--s-button-hover);
+    cursor: pointer;
+}
+
+/*SUVS Section*/
+
+.suv {
+    background-color: var(--suv-background);
+    padding: 30px;
+}
+
+.suv-button {
+    background-color: var(--background-headings-buttons);
+    border:none;
+    padding: 10px;
+    border-radius: 40px;
+    width: 50%;
+    color: var(--suv-background);
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.suv-button:hover {
+    cursor: pointer;
+    background-color: var(--suv-button-hover);
+}
+
+/*Luxury section*/
+
+.luxury {
+    background-color: var(--luxury-background);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px;
+}
+
+
+.l-button{
+    background-color: var(--background-headings-buttons);
+    border:none;
+    padding: 10px;
+    border-radius: 40px;
+    width: 50%;
+    color: var(--luxury-background);
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.l-button:hover {
+    cursor: pointer;
+    background-color: var(--luxury-button-hover);
+}
+
+/*overall applications*/
+
+.description {
+    color: var(--description-text);
+    font-family: "Lexend Deca", serif;
+}
+
+.title {
+    color: var(--background-headings-buttons);
+    font-family: "Big Shoulders Display",sans-serif;
+}
